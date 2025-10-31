@@ -1,0 +1,31 @@
+{
+  "template": "https://github.com/adrisala/cruft-boilerplate.git",
+  "commit": "3ebfd2c60127efe17ff1129f1c13a09b15b72b0b",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "service-example",
+      "project_slug": "service_example",
+      "project_short_description": "A Django REST Framework service for Ansible Automation Platform",
+      "author_name": "adrisala",
+      "version": "0.1.0",
+      "python_version": "3.12",
+      "django_version": "5.2.7",
+      "use_rest_framework": "y",
+      "__package_name": "service_example",
+      "_copy_without_render": [
+        "*.pyc",
+        "__pycache__",
+        ".venv",
+        "*.egg-info",
+        ".git"
+      ],
+      "_extensions": [
+        "cruft_boilerplate.extensions.PackageNameExtension"
+      ],
+      "_template": "https://github.com/adrisala/cruft-boilerplate.git",
+      "_commit": "3ebfd2c60127efe17ff1129f1c13a09b15b72b0b"
+    }
+  },
+  "directory": null
+}
