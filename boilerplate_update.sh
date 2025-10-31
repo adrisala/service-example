@@ -60,8 +60,7 @@ if git status --porcelain | grep '^UU' > /dev/null || find . -name "*.rej" -prin
     echo "Merge conflicts detected!"
     exit 1  # Exit with error
 fi
-# lint, commit and push
-pre-commit run --color=always -a
+# commit and push
 git add .
 git commit -m "chore: cruft-boilerplate sync for $(date +"%Y-%m-%d %H:%M:%S")"
 git push --force -o merge_request.create -o merge_request.target=devel -o merge_request.description="This PR was created by automated script" origin cruft-boilerplate-sync

@@ -1,6 +1,6 @@
 {
   "template": "https://github.com/adrisala/cruft-boilerplate.git",
-  "commit": "3ebfd2c60127efe17ff1129f1c13a09b15b72b0b",
+  "commit": "579cd73aa0c2eb6ea11fe58e6a8cdf8ba279f102",
   "checkout": null,
   "context": {
     "cookiecutter": {
@@ -24,7 +24,7 @@
         "cruft_boilerplate.extensions.PackageNameExtension"
       ],
       "_template": "https://github.com/adrisala/cruft-boilerplate.git",
-      "_commit": "3ebfd2c60127efe17ff1129f1c13a09b15b72b0b"
+      "_commit": "579cd73aa0c2eb6ea11fe58e6a8cdf8ba279f102"
     }
   },
   "directory": null
