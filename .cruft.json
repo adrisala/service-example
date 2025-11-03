@@ -1,6 +1,6 @@
 {
   "template": "https://github.com/adrisala/cruft-boilerplate.git",
-  "commit": "5d6fb3c44e98ac0c91fc7f03204c55e20e178aba",
+  "commit": "ef2a9e2d989f3c5965dfe8d41f7127f11393fd5c",
   "checkout": null,
   "context": {
     "cookiecutter": {
@@ -8,6 +8,7 @@
       "project_slug": "service_example",
       "project_short_description": "A Django REST Framework service for Ansible Automation Platform",
       "author_name": "adrisala",
+      "maintainer_name": "maintainer-name",
       "version": "0.1.0",
       "python_version": "3.12",
       "django_version": "5.2.7",
@@ -24,7 +25,7 @@
         "cruft_boilerplate.extensions.PackageNameExtension"
       ],
       "_template": "https://github.com/adrisala/cruft-boilerplate.git",
-      "_commit": "5d6fb3c44e98ac0c91fc7f03204c55e20e178aba"
+      "_commit": "ef2a9e2d989f3c5965dfe8d41f7127f11393fd5c"
     }
   },
   "directory": null

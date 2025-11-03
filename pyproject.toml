@@ -12,6 +12,9 @@ license = {text = "MIT"}
 authors = [
     {name = "adrisala"}
 ]
+maintainers = [
+    {name = "maintainer-name"}
+]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Framework :: Django",
@@ -28,8 +31,7 @@ classifiers = [
 dependencies = [
     "django>=5.2.7,<6.0",
     "djangorestframework>=3.14.0,<4.0",
-    "django-ansible-base",
-    "httpx"
+    "django-ansible-base"
 ]
 
 [project.optional-dependencies]
