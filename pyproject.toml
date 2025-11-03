@@ -12,6 +12,9 @@ license = {text = "MIT"}
 authors = [
     {name = "adrisala"}
 ]
+maintainers = [
+    {name = "tester"}
+]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Framework :: Django",

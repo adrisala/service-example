@@ -1,7 +1,8 @@
-_commit: 6f45b3a
+_commit: 0bea33c
 _src_path: git@github.com:adrisala/copier-boilerplate.git
 author_name: adrisala
 django_version: '5.2'
+maintainer_name: tester
 project_name: Service Example
 project_short_description: A Django REST Framework service
 project_slug: service_example
