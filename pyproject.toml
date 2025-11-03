@@ -1,0 +1,97 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "service_example"
+version = "0.1.0"
+description = "A Django REST Framework service"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "adrisala"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: Django",
+    "Framework :: Django :: 5.2",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "django>=5.2.7,<6.0",
+    "djangorestframework>=3.14.0,<4.0",
+    "django-ansible-base",
+    "httpx"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-django",
+    "black",
+    "flake8",
+    "isort",
+    "mypy",
+    "django-stubs>=4.2.0",
+    "djangorestframework-stubs>=3.14.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/adrisala/service_example"
+Repository = "https://github.com/adrisala/service_example"
+Issues = "https://github.com/adrisala/service_example/issues"
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | \.tox
+  | migrations
+  | __pycache__
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+skip_gitignore = true
+skip = ["migrations", ".venv", "venv"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+plugins = ["mypy_django_plugin.main", "mypy_drf_plugin.main"]
+
+[[tool.mypy.overrides]]
+module = "*.migrations.*"
+ignore_errors = true
+
+[tool.django-stubs]
+django_settings_module = "service_example.settings"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "service_example.settings"
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+testpaths = ["main"]
+addopts = [
+    "--reuse-db",
+    "--nomigrations",
+    "-v",
+]
+
