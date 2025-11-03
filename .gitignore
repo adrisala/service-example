@@ -154,3 +154,6 @@ static/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# AI generated files
+CLAUDE.md
